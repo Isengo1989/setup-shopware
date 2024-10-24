@@ -234,7 +234,7 @@ runs:
       shell: bash
       working-directory: ${{ inputs.path }}
       run: |
-        composer run build:js
+        composer run build:storefront
         bin/console assets:install --env="${{ inputs.env }}"
 
     - name: Assign default Storefront theme to all sales channels
